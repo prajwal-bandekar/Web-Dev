@@ -30,13 +30,14 @@ ScrollTrigger.refresh();
 }
 inti();
 
+
 // GSAP
 
 let tl = gsap.timeline({
     scrollTrigger:{
         trigger:".page1 h1",
         scroller:".main",
-        markers:true,
+        // markers:true,
         start:"top 30%",
         end:"top 0",
         scrub:3

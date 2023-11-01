@@ -80,3 +80,10 @@ position: relative;
 left: 50%;
 transform: translate(-50%,0);
 }
+
+.page1 h4{
+    font-family: PP mori;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
