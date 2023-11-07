@@ -20,6 +20,7 @@ html,body{
     background-color: #edbfff;
     z-index: 9;
     mix-blend-mode: difference;
+    transition: left linear 0.5s top linear 0.5s ;
 }
 
 .main{

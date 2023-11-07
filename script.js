@@ -41,7 +41,7 @@ main.addEventListener("mousemove",function(dets){
 
 // GSAP
 
-let tl = gsap.timelisne({
+let tl = gsap.timeline({
     scrollTrigger:{
         trigger:".page1 h1",
         scroller:".main",
