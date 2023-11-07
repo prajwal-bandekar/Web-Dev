@@ -11,6 +11,17 @@ html,body{
     width: 100%;
 }
 
+/* Cursor */
+.cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #edbfff;
+    z-index: 9;
+    mix-blend-mode: difference;
+}
+
 .main{
     background-color: black;
 }
@@ -88,10 +99,16 @@ transform: translate(-50%,0);
     margin-bottom: 0px;
 }
 
+#scrollText{
+    font-weight: 100;
+}
+
+/* Page 2 CSS */
 .page2{
-    min-height: 130vh;
+    min-height: 80vh;
     width: 100%;
     padding: 100px 5vw;
+    border-bottom: 2px solid rgb(177, 177, 177);
 }
 
 .page2-container{
@@ -142,4 +159,31 @@ transform: translate(-50%,0);
     background-color: #edbfff;
     color: #111;
     margin-top: 20px;
+}
+
+/* Page 3 */
+
+.page3{
+    min-height: 150vh;
+    width: 100%;
+    position: relative;
+    padding-top: 100px;
+}
+
+.page3 h1{
+    font-size: 6w;
+    font-weight:300 ;
+    color: black;
+    margin-left: 100px;
+}
+
+.page3-part1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.page3-part1 img{
+height: 600px;
+margin-top: 160px;
 }

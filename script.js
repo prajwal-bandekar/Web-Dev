@@ -30,10 +30,18 @@ ScrollTrigger.refresh();
 }
 inti();
 
+var crsr = document.querySelector(".cursor")
+var main= document.querySelector(".main")
+
+// Dets sends Co-ordinates of the mouse 
+main.addEventListener("mousemove",function(dets){
+  crsr.style.left = dets.x+"px"
+  crsr.style.top = dets.y+"px"
+})
 
 // GSAP
 
-let tl = gsap.timeline({
+let tl = gsap.timelisne({
     scrollTrigger:{
         trigger:".page1 h1",
         scroller:".main",
@@ -59,6 +67,15 @@ tl.to(".page1 h2",{
 tl.to(".page1 video",{
     width:"90%"
 },"factor")
+
+tl.to("#scrollText",{
+  y:-30,
+  duration:0.5,
+  opacity:0
+},"factor")
+
+
+
 
 let tl2 = gsap.timeline({
   scrollTrigger:{
