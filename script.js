@@ -47,13 +47,31 @@ let tl = gsap.timeline({
 tl.to(".page1 h1",{
     x:-100,
     duration:1,  
+    opacity:0.2
 },"factor")
 
 tl.to(".page1 h2",{
     x:100,
     duration:1,  
+    opacity:0.2
 },"factor")
 
 tl.to(".page1 video",{
     width:"90%"
 },"factor")
+
+let tl2 = gsap.timeline({
+  scrollTrigger:{
+      trigger:".page1 h1",
+      scroller:".main",
+      // markers:true,
+      start:"top -115%",
+      end:"top -120%",
+      scrub:3
+  }
+})
+
+tl2.to(".main",{
+  backgroundColor: "#fff"
+
+})
