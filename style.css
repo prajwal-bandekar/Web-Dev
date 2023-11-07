@@ -148,18 +148,20 @@ transform: translate(-50%,0);
 }
 
 .page2-right p{
-    font-size: 24px;
+    font-size: 23px;
     color: black; 
+    letter-spacing: 1px;
 }
 
 .page2-right button{
+    font-weight: 500;
     width: 100%;
     border-radius: 50px;
     border: none;
-    padding: 4px 0;
+    padding: 18px 0;
     background-color: #edbfff;
     color: #111;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 /* Page 3 */
@@ -172,8 +174,8 @@ transform: translate(-50%,0);
 }
 
 .page3 h1{
-    font-size: 6w;
-    font-weight:300 ;
+    font-size: 6.5vw;
+    font-weight:500 ;
     color: black;
     margin-left: 100px;
 }
